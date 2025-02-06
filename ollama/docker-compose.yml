@@ -9,7 +9,7 @@ services:
       - "11434:11434"
     networt:
       - my-net:
-    command: CMD ["/pull-model.sh"]
+    entrypoint: ["sh", "/pull-model.sh"]
     container_name: ollama-server
 
 
