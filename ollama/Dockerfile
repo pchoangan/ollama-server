@@ -1,6 +1,6 @@
 FROM ollama/llama2
 
-COPY ./pull-model.sh /app/
+COPY ./llama2/pull-model.sh /app/
 RUN chmod +x /app/pull-model.sh
 ENV OLLAMA_MODEL="qwen2.5:0.5b"
 ENV OLLAMA_NUM_PARALLEL=2
