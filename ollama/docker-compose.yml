@@ -9,8 +9,10 @@ services:
       - "11434:11434"
     networt:
       - my-net:
-    entrypoint: ["sh", "/pull-model.sh"]
+    entrypoint: ["sh", "/app/pull-model.sh"]
     container_name: ollama-server
+    environment:
+      OLLAMA_MODEL: "llama3.2:3b"
 
 
 networt:
