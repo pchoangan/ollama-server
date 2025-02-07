@@ -1,7 +1,7 @@
 ./bin/ollama serve & # Khởi động Ollama server
 pid=$!
-echo "Pulling llama3.2:3b model"
-ollama pull llama3.2:3b
+echo "Pulling qwen2.5:0.5b model"
+ollama pull qwen2.5:0.5b
 
 sleep 5 # Chờ 5 giây
 
