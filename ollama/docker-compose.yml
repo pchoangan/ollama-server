@@ -11,8 +11,8 @@ services:
       - my-net:    
     container_name: ollama-server
     environment:
-      OLLAMA_MODEL: "llama3.2:3b"
-    CMD: ["ollama", "run", "llama3.2:3b"]
+      OLLAMA_MODEL: "qwen2.5:0.5b"
+    CMD: ["ollama", "run", "qwen2.5:0.5b"]
 
 
 networt:
