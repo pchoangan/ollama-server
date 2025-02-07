@@ -2,7 +2,7 @@
 services:
   ollama-sever:
     build:
-      context: ./llama2
+      context: ./ollama
       dockerfile: Dockerfile
     image: ollama/llama2
     volumes:
