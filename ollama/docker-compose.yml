@@ -4,7 +4,9 @@ services:
     build:
       context: ./ollama
       dockerfile: Dockerfile
-    image: ollama-server
+    image: ollama/llama2
+    volumes:
+      - ollama_data:/data
     ports:
       - "11434:11434"
     networt:
@@ -13,8 +15,10 @@ services:
     environment:
       OLLAMA_MODEL: "qwen2.5:0.5b"
     CMD: ["ollama", "run", "qwen2.5:0.5b"]
+    restart: always
 
-
+volumes:
+  ollama_data:
 networt:
   my-net:
     driver: bridge
