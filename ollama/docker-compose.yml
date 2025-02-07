@@ -12,6 +12,7 @@ services:
     container_name: ollama-server
     environment:
       OLLAMA_MODEL: "llama3.2:3b"
+    CMD: ["ollama", "run", "llama3.2:3b"]
 
 
 networt:
